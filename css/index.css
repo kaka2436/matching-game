@@ -4,65 +4,64 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    /*display: flex;*/
 }
-body{
+body {
 	background: url(../img/geometry2.png);
 }
-.cover{
+.cover {
 	width: 100%;
 	height: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
 }
-.content{
+.content {
 	width: 45%;
     margin: auto;
 	display: flex;
 	flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
-header{
+header {
 	font-size: 3em;
 }
 
-.score{
+.score {
 	width: 100%;
 	height: 27px;
+	margin: 10px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
-.score-left{
+.score-left {
 	margin-left: 10%;
 	display: flex;
 	align-items: center;
 }
-.stars{
+.stars {
 	width: 81px;
 	height: 27px;
 	display: inline-block;
 	overflow: hidden;
 	position: relative;
 }
-.star-dark{
+.star-dark {
 	position: absolute;
 	left: 81px;
-	top: 0px;
+	top: 0;
 }
 
-.moves{
-	margin-left: 10px;;
+.moves {
+	margin-left: 10px;
 }
-.restart{
+.restart {
 	width: 27px;
 	height: 27px;
 	margin-right: 10%;
 }
-.desk{
+.desk {
 	width: 660px;
     height: 660px;
 	border-radius: 10px;
@@ -72,14 +71,13 @@ header{
 	flex-wrap: wrap;
 }
 
-.card{
+.card {
 	list-style: none;
 	width: 20%;
 	height: 20%;
 	margin: 4% 0% 0% 4%;
 	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
 	border-radius: 8%;
-	/*background-color:#2e3d49;*/
 	background-color: #02b3e4;
     font-size: 3em;
     color: #ffffff;
@@ -88,55 +86,114 @@ header{
     justify-content: center;
     align-items: center;
 }
-.card.close{
+.card.close {
 	font-size: 0em;
-	background-color:#2e3d49;
+	background-color: #2e3d49;
 	animation: closeCard 1.3s ease-out;
 }
 
-@-moz-keyframes closeCard{
-	0%{transform:rotateY(0deg); font-size: 3em;background-color:#02b3e4;}
-	45%{transform: rotateY(90deg); font-size: 3em;background-color:#02b3e4;}
-	46%{transform: rotateY(90deg); font-size: 0em;background-color:#02b3e4;}
-	100%{transform: rotateY(180deg);font-size: 0em;background-color:#2e3d49;}
+@-moz-keyframes closeCard {
+	0%{transform: rotateY(0deg); font-size: 3em; background-color: #02b3e4;}
+	45%{transform: rotateY(90deg); font-size: 3em; background-color: #02b3e4;}
+	46%{transform: rotateY(90deg); font-size: 0em; background-color: #02b3e4;}
+	100%{transform: rotateY(180deg);font-size: 0em; background-color: #2e3d49;}
 }
-@-mz-keyframes closeCard{
-	0%{transform:rotateY(0deg); font-size: 3em;background-color:#02b3e4;}
-	45%{transform: rotateY(90deg); font-size: 3em;background-color:#02b3e4;}
-	46%{transform: rotateY(90deg); font-size: 0em;background-color:#02b3e4;}
-	100%{transform: rotateY(180deg);font-size: 0em;background-color:#2e3d49;}
+@-mz-keyframes closeCard {
+	0%{transform: rotateY(0deg); font-size: 3em; background-color: #02b3e4;}
+	45%{transform: rotateY(90deg); font-size: 3em; background-color: #02b3e4;}
+	46%{transform: rotateY(90deg); font-size: 0em; background-color: #02b3e4;}
+	100%{transform: rotateY(180deg);font-size: 0em; background-color: #2e3d49;}
 }
-@-webkit-keyframes closeCard{
-	0%{transform:rotateY(0deg); font-size: 3em;background-color:#02b3e4;}
-	45%{transform: rotateY(90deg); font-size: 3em;background-color:#02b3e4;}
-	46%{transform: rotateY(90deg); font-size: 0em;background-color:#02b3e4;}
-	100%{transform: rotateY(180deg);font-size: 0em;background-color:#2e3d49;}
+@-webkit-keyframes closeCard {
+	0%{transform: rotateY(0deg); font-size: 3em; background-color: #02b3e4;}
+	45%{transform: rotateY(90deg); font-size: 3em; background-color: #02b3e4;}
+	46%{transform: rotateY(90deg); font-size: 0em; background-color: #02b3e4;}
+	100%{transform: rotateY(180deg);font-size: 0em; background-color: #2e3d49;}
 }
-@-o-keyframes closeCard{
-	0%{transform:rotateY(0deg); font-size: 3em;background-color:#02b3e4;}
-	45%{transform: rotateY(90deg); font-size: 3em;background-color:#02b3e4;}
-	46%{transform: rotateY(90deg); font-size: 0em;background-color:#02b3e4;}
-	100%{transform: rotateY(180deg);font-size: 0em;background-color:#2e3d49;}
+@-o-keyframes closeCard {
+	0%{transform: rotateY(0deg); font-size: 3em; background-color: #02b3e4;}
+	45%{transform: rotateY(90deg); font-size: 3em; background-color: #02b3e4;}
+	46%{transform: rotateY(90deg); font-size: 0em; background-color: #02b3e4;}
+	100%{transform: rotateY(180deg);font-size: 0em; background-color: #2e3d49;}
 }
 
 
-.card.open{
+.card.open {
 	font-size: 3em;
 	background-color: #02b3e4;
 }
 
-.card.match{
+.card.show {
 	font-size: 3em;
+	background-color: #02b3e4;
+	animation:showAnimation 0.5s linear;
+}
+@-moz-keyframes showAnimation {
+	20%{transform: skew(15deg,-15deg);}
+	40%{transform: skew(-15deg,15deg);}
+	60%{transform: skew(15deg,-15deg);}
+	80%{transform: skew(-15deg,15deg);}
+	100%{transform: skew(15deg,-15deg);}
+}
+@-webkit-keyframes showAnimation {
+	20%{transform: skew(15deg,-15deg);}
+	40%{transform: skew(-15deg,15deg);}
+	60%{transform: skew(15deg,-15deg);}
+	80%{transform: skew(-15deg,15deg);}
+	100%{transform: skew(15deg,-15deg);}
+}
+@-mz-keyframes showAnimation {
+	20%{transform: skew(15deg,-15deg);}
+	40%{transform: skew(-15deg,15deg);}
+	60%{transform: skew(15deg,-15deg);}
+	80%{transform: skew(-15deg,15deg);}
+	100%{transform: skew(15deg,-15deg);}
+}
+@-o-keyframes showAnimation {
+	20%{transform: skew(15deg,-15deg);}
+	40%{transform: skew(-15deg,15deg);}
+	60%{transform: skew(15deg,-15deg);}
+	80%{transform: skew(-15deg,15deg);}
+	100%{transform: skew(15deg,-15deg);}
+}
+
+.card.match {
+	font-size: 3em;
+	animation: matchAnimation 0.4s linear;
+}
+@-moz-keyframes matchAnimation {
+	25%{transform: scaleY(0.5) scaleX(1.2)}
+	85%{transform: scaleY(1) scaleX(1)}
+	95%{transform: scaleY(0.8) scaleX(1.1)}
+	100%{transform: scaleY(1) scaleX(1)}
+}
+@-webkit-keyframes matchAnimation {
+	25%{transform: scaleY(0.5) scaleX(1.2)}
+	85%{transform: scaleY(1) scaleX(1)}
+	95%{transform: scaleY(0.8) scaleX(1.1)}
+	100%{transform: scaleY(1) scaleX(1)}
+}
+@-mz-keyframes matchAnimation {
+	25%{transform: scaleY(0.5) scaleX(1.2)}
+	85%{transform: scaleY(1) scaleX(1)}
+	95%{transform: scaleY(0.8) scaleX(1.1)}
+	100%{transform: scaleY(1) scaleX(1)}
+}
+@-o-keyframes matchAnimation {
+	25%{transform: scaleY(0.5) scaleX(1.2)}
+	85%{transform: scaleY(1) scaleX(1)}
+	95%{transform: scaleY(0.8) scaleX(1.1)}
+	100%{transform: scaleY(1) scaleX(1)}
 }
 
 @media only screen and (max-width:700px ) {
-	header{
+	header {
 		font-size: 1.6em;
 	}
 }
 
 
-.winner{
+.winner {
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -149,21 +206,21 @@ header{
 	justify-content: center;
 	background-color: white;
 }
-.right-ico{
+.right-ico {
 	list-style: none;
 	font-size: 3em;
 	color: green;
 }
-.winner p{
+.winner p {
 	font-size: 1em;
 	color: gray;
 }
-.winner button{
+.winner button {
 	width: 160px;
 	height: 40px;
 	border-radius: 10px;
 	color: white;
 	border: 0;
 	font-size: 1em;
-	background-color:lightseagreen;
+	background-color: lightseagreen;
 }
