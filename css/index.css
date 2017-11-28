@@ -61,6 +61,7 @@ header {
 	height: 27px;
 	margin-right: 10%;
 }
+
 .desk {
 	width: 660px;
     height: 660px;
@@ -192,7 +193,7 @@ header {
 	}
 }
 
-
+/*定义当游戏胜利时，遮罩的样式*/
 .winner {
 	position: fixed;
 	width: 100%;

@@ -8,6 +8,7 @@
 		<script src="js/index.js"></script>
 	</head>
 	<body>
+		<!--当游戏胜利时，弹出的遮罩，开始时不显示-->
 		<div class="winner">
 			<li class="right-ico">
 				<i class="fa fa-thumbs-o-up"></i>
@@ -17,11 +18,14 @@
 			<p>Wooooooooooo!</p>
 			<button class="again">Play again!</button>
 		</div>
+		<!--游戏开始时，遮罩页面，使用户不可点击-->
 		<div class="cover"></div>
+		<!--网页主体部分-->
 		<div class="content">
 			<header>Matching Game</header>
 			<section class="score">
 				<div class="score-left">
+					<!--星星图标，使用两个图片，一明一暗，去除星星时使用暗色遮挡亮色-->
 					<div class="stars">
 						<img src="img/star-light.png" alt="" class="star-light" />
 						<img src="img/star-dark.png" alt="" class="star-dark" />
