@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
-		<title></title>
+		<meta charset="utf-8">
+		<title>Matching game -- udacity</title>
 		<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/index.css"/>
+		<link rel="stylesheet" href="css/index.css">
+		<script type="text/javascript" src="http://hovertree.com/ziyuan/jquery/jquery-1.11.3.min.js"></script>
 		<script src="js/index.js"></script>
 	</head>
 	<body>
@@ -15,6 +16,7 @@
 			</li>
 			<h1>Congratulations!You Win!</h1>
 			<p>With <span class="win-moves"></span> moves and <span class="starNum">0</span> stars!</p>
+			<p>You spend times: <span class="cost-time"></span></p>
 			<p>Wooooooooooo!</p>
 			<button class="again">Play again!</button>
 		</div>
@@ -30,9 +32,10 @@
 						<img src="img/star-light.png" alt="" class="star-light" />
 						<img src="img/star-dark.png" alt="" class="star-dark" />
 					</div>
-					<span class="moves">0</span>Moves
+					<span class="moves">0</span>Moves 
+					<span class="show-time">time:<time class="game-time">00:00:00</time></span>
 				</div>
-				<img class="restart" src="img/restart.png" alt="" />
+				<img class="restart" src="img/restart.png" alt="">
 			</section>
 			<section class="desk">
 				<li class="card"><i class="fa fa-diamond"></i></li>

@@ -56,6 +56,13 @@ header {
 .moves {
 	margin-left: 10px;
 }
+.show-time {
+	margin-left: 10px;
+}
+
+.game-time {
+	margin: 0 5px;
+}
 .restart {
 	width: 27px;
 	height: 27px;
